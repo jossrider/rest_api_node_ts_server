@@ -1,5 +1,8 @@
-import { sumar } from "./server"
+import colors from "colors"
+import server from "./server"
 
-console.log("Desde Index.ts")
+const port = process.env.PORT || 4000
 
- sumar()
+server.listen(port, () => {
+  console.log(colors.cyan.bold(`REST API en el puerto ${port}`))
+})
