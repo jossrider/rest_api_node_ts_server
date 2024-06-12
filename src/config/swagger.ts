@@ -1,4 +1,5 @@
 import swaggerJSDoc from 'swagger-jsdoc'
+import { SwaggerUiOptions } from 'swagger-ui-express'
 
 const options: swaggerJSDoc.Options = {
   swaggerDefinition: {
@@ -15,4 +16,19 @@ const options: swaggerJSDoc.Options = {
 
 const swaggerSpec = swaggerJSDoc(options)
 
+const swaggerUiOptions: SwaggerUiOptions = {
+  // content: url('https://codigoconjuan.com/wp-content/themes/cursosjuan/img/logo.svg');
+  customCss: `.topbar-wrapper .link{
+    content: url('Logo personalizado aqui');
+    height:80px;
+    width:auto;
+    }
+    .swagger-ui .topbar{
+      background-color: #2b3b45;
+      }
+      `,
+  customSiteTitle: 'Documentacion REST API Express / TypeScript',
+}
+
 export default swaggerSpec
+export { swaggerUiOptions }
