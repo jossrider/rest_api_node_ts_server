@@ -19,9 +19,9 @@ const swaggerSpec = swaggerJSDoc(options)
 const swaggerUiOptions: SwaggerUiOptions = {
   // content: url('https://codigoconjuan.com/wp-content/themes/cursosjuan/img/logo.svg');
   customCss: `.topbar-wrapper .link{
-    content: url('Logo personalizado aqui');
+    content: url('https://www.svgrepo.com/show/331708/cloud-service.svg');
     height:80px;
-    width:auto;
+    width:120px;
     }
     .swagger-ui .topbar{
       background-color: #2b3b45;
